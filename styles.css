@@ -782,4 +782,104 @@ body {
     .nav-menu {
         background-color: var(--surface-color);
     }
+}
+
+/* Language Selector */
+.language-selector {
+    position: relative;
+    margin-left: 20px;
+}
+
+.language-dropdown {
+    position: relative;
+}
+
+.language-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.language-btn.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.language-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 0;
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.language-options.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: #fff;
+    font-size: 14px;
+}
+
+.language-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.language-option.active {
+    background: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+}
+
+/* Mobile responsiveness for language selector */
+@media (max-width: 768px) {
+    .language-selector {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .nav-menu.active .language-selector {
+        display: block;
+    }
+    
+    .language-options {
+        position: fixed;
+        top: auto;
+        right: 20px;
+        left: 20px;
+        width: auto;
+    }
 } 

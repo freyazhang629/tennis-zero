@@ -28,18 +28,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica,Arial,sans-serif&display=swap" rel="stylesheet">
+    <script src="i18n.js"></script>
+    <script>
+        // 页面特定的元数据更新函数
+        function updatePageMeta() {
+            const pageMeta = {
+                en: {
+                    title: 'Learn New Tennis Zero Styles - Complete Guide & Tier List | Tennis Zero Code',
+                    description: 'Master Tennis Zero styles with our complete guide. Learn about S-tier styles like Liberation and Jackpot, stats breakdown, and pro strategies.'
+                },
+                tl: {
+                    title: 'Matuto ng Bagong Tennis Zero Styles - Complete Guide & Tier List | Tennis Zero Code',
+                    description: 'Master ang Tennis Zero styles sa aming complete guide. Matuto tungkol sa S-tier styles tulad ng Liberation at Jackpot, stats breakdown, at pro strategies.'
+                },
+                ru: {
+                    title: 'Изучить новые стили Tennis Zero - Полное руководство и список уровней | Tennis Zero Code',
+                    description: 'Овладейте стилями Tennis Zero с нашим полным руководством. Узнайте о стилях S-уровня, таких как Liberation и Jackpot, разбор статистики и профессиональные стратегии.'
+                },
+                zh: {
+                    title: '学习新的 Tennis Zero 风格 - 完整指南和等级列表 | Tennis Zero Code',
+                    description: '通过我们的完整指南掌握 Tennis Zero 风格。了解 S 级风格如 Liberation 和 Jackpot，统计分析和专业策略。'
+                },
+                pt: {
+                    title: 'Aprender Novos Estilos Tennis Zero - Guia Completo e Lista de Níveis | Tennis Zero Code',
+                    description: 'Domine os estilos Tennis Zero com nosso guia completo. Aprenda sobre estilos de nível S como Liberation e Jackpot, análise de estatísticas e estratégias profissionais.'
+                }
+            };
+            
+            if (pageMeta[currentLanguage]) {
+                document.title = pageMeta[currentLanguage].title;
+                document.querySelector('meta[name="description"]').content = pageMeta[currentLanguage].description;
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <h1><a href="/">Tennis Zero Code</a></h1>
+                <h1><a href="/" data-i18n="site-title">Tennis Zero Code</a></h1>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="/" class="nav-link">Tennis Zero Codes</a></li>
-                    <li><a href="/styles.html" class="nav-link active">Learn New Tennis Zero Styles</a></li>
+                    <li><a href="/" class="nav-link" data-i18n="nav-codes">Tennis Zero Codes</a></li>
+                    <li><a href="/styles.html" class="nav-link active" data-i18n="nav-styles">Learn New Tennis Zero Styles</a></li>
                 </ul>
             </div>
             <div class="hamburger" id="hamburger">
@@ -55,16 +88,16 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Learn New Tennis Zero Styles</h1>
-                <p class="hero-description">Master every style with our comprehensive tier list, stats breakdown, and pro strategies. Dominate the court with the best styles in Tennis Zero!</p>
+                <h1 class="hero-title" data-i18n="styles-hero-title">Learn New Tennis Zero Styles</h1>
+                <p class="hero-description" data-i18n="styles-hero-description">Master every style with our comprehensive tier list, stats breakdown, and pro strategies. Dominate the court with the best styles in Tennis Zero!</p>
             </div>
         </section>
 
         <!-- Tier List Section -->
         <section class="tier-list-section">
             <div class="container">
-                <h2 class="section-title">Tennis Zero Styles Tier List</h2>
-                <p class="section-description">All styles ranked from best to worst, determined by their overall effectiveness in competitive play.</p>
+                <h2 class="section-title" data-i18n="styles-tier-title">Tennis Zero Styles Tier List</h2>
+                <p class="section-description" data-i18n="styles-tier-description">All styles ranked from best to worst, determined by their overall effectiveness in competitive play.</p>
                 
                 <!-- S Tier -->
                 <div class="tier-group s-tier">
@@ -438,26 +471,26 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Tennis Zero Code</h4>
-                    <p>Your ultimate source for Tennis Zero codes, styles, and strategies.</p>
+                    <h4 data-i18n="site-title">Tennis Zero Code</h4>
+                    <p data-i18n="footer-description">Your ultimate source for Tennis Zero codes, styles, and strategies.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer-quicklinks">Quick Links</h4>
                     <ul>
-                        <li><a href="/">Tennis Zero Codes</a></li>
-                        <li><a href="/styles.html">Tennis Zero Styles</a></li>
+                        <li><a href="/" data-i18n="nav-codes">Tennis Zero Codes</a></li>
+                        <li><a href="/styles.html" data-i18n="nav-styles">Tennis Zero Styles</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Game Info</h4>
+                    <h4 data-i18n="footer-gameinfo">Game Info</h4>
                     <ul>
-                        <li><a href="#">What is Tennis Zero?</a></li>
-                        <li><a href="#">Discord Server</a></li>
+                        <li><a href="#" data-i18n="footer-what-is">What is Tennis Zero?</a></li>
+                        <li><a href="#" data-i18n="footer-discord">Discord Server</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Tennis Zero Code. All rights reserved.</p>
+                <p data-i18n="footer-copyright">&copy; 2025 Tennis Zero Code. All rights reserved.</p>
             </div>
         </div>
     </footer>

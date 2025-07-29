@@ -28,18 +28,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica,Arial,sans-serif&display=swap" rel="stylesheet">
+    <script src="i18n.js"></script>
+    <script>
+        // 页面特定的元数据更新函数
+        function updatePageMeta() {
+            const pageMeta = {
+                en: {
+                    title: 'Tennis Zero Codes July 2025 - Latest Working Codes & Rewards | Tennis Zero Code',
+                    description: 'Get the latest Tennis Zero codes for July 2025! Free lucky spins, yen, and racket packs. Updated daily with working Roblox Tennis Zero codes.'
+                },
+                tl: {
+                    title: 'Tennis Zero Codes Hulyo 2025 - Pinakabagong Gumaganang Codes & Rewards | Tennis Zero Code',
+                    description: 'Kunin ang pinakabagong Tennis Zero codes para sa Hulyo 2025! Libreng lucky spins, yen, at racket packs. Na-update araw-araw na may gumaganang Roblox Tennis Zero codes.'
+                },
+                ru: {
+                    title: 'Коды Tennis Zero июль 2025 - Последние рабочие коды и награды | Tennis Zero Code',
+                    description: 'Получите последние коды Tennis Zero на июль 2025! Бесплатные счастливые вращения, йены и пакеты ракеток. Обновляется ежедневно с рабочими кодами Roblox Tennis Zero.'
+                },
+                zh: {
+                    title: 'Tennis Zero 代码 2025年7月 - 最新可用代码和奖励 | Tennis Zero Code',
+                    description: '获取2025年7月最新的Tennis Zero代码！免费幸运旋转、日元和球拍包。每日更新可用的Roblox Tennis Zero代码。'
+                },
+                pt: {
+                    title: 'Códigos Tennis Zero Julho 2025 - Códigos Funcionais e Recompensas Mais Recentes | Tennis Zero Code',
+                    description: 'Obtenha os códigos Tennis Zero mais recentes para julho de 2025! Giros da sorte gratuitos, yen e pacotes de raquete. Atualizado diariamente com códigos Roblox Tennis Zero funcionais.'
+                }
+            };
+            
+            if (pageMeta[currentLanguage]) {
+                document.title = pageMeta[currentLanguage].title;
+                document.querySelector('meta[name="description"]').content = pageMeta[currentLanguage].description;
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <h1><a href="/">Tennis Zero Code</a></h1>
+                <h1><a href="/" data-i18n="site-title">Tennis Zero Code</a></h1>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="/" class="nav-link active">Tennis Zero Codes</a></li>
-                    <li><a href="/styles.html" class="nav-link">Learn New Tennis Zero Styles</a></li>
+                    <li><a href="/" class="nav-link active" data-i18n="nav-codes">Tennis Zero Codes</a></li>
+                    <li><a href="/styles.html" class="nav-link" data-i18n="nav-styles">Learn New Tennis Zero Styles</a></li>
                 </ul>
             </div>
             <div class="hamburger" id="hamburger">
@@ -57,8 +90,8 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1 class="hero-title">Tennis Zero Codes July 2025</h1>
-                        <p class="hero-description">Get the latest working Tennis Zero codes for free rewards, lucky spins, and exclusive items. Updated daily!</p>
+                        <h1 class="hero-title" data-i18n="hero-title">Tennis Zero Codes July 2025</h1>
+                        <p class="hero-description" data-i18n="hero-description">Get the latest working Tennis Zero codes for free rewards, lucky spins, and exclusive items. Updated daily!</p>
                     </div>
                     <div class="hero-image">
                         <img src="images/screenshots/tennis-zero-lobby.jpg" alt="Tennis Zero game lobby screenshot" class="hero-img" loading="lazy">
@@ -70,70 +103,70 @@
         <!-- Latest Codes Section -->
         <section class="codes-section">
             <div class="container">
-                <h2 class="section-title">Latest Tennis Zero Codes</h2>
-                <p class="section-description">Our list of Roblox Tennis Zero codes is here to help you serve against your opponents on the court, with free rewards and more to claim.</p>
+                <h2 class="section-title" data-i18n="latest-codes-title">Latest Tennis Zero Codes</h2>
+                <p class="section-description" data-i18n="latest-codes-description">Our list of Roblox Tennis Zero codes is here to help you serve against your opponents on the court, with free rewards and more to claim.</p>
                 
                 <div class="codes-grid">
                     <div class="code-card new">
                         <div class="code-header">
                             <span class="code-name">JACKPOTBUFF</span>
-                            <span class="new-badge">New!</span>
+                            <span class="new-badge" data-i18n="new-badge">New!</span>
                         </div>
-                        <div class="code-rewards">6 lucky style spins and 6 lucky flow spins</div>
-                        <button class="copy-btn" onclick="copyCode('JACKPOTBUFF')">Copy Code</button>
+                        <div class="code-rewards" data-i18n="reward-jackpotbuff">6 lucky style spins and 6 lucky flow spins</div>
+                        <button class="copy-btn" onclick="copyCode('JACKPOTBUFF')" data-i18n="copy-code">Copy Code</button>
                     </div>
 
                     <div class="code-card">
                         <div class="code-header">
                             <span class="code-name">SORRYFORSHUTDOWN2</span>
                         </div>
-                        <div class="code-rewards">2 lucky style spins and 2 lucky flow spins</div>
-                        <button class="copy-btn" onclick="copyCode('SORRYFORSHUTDOWN2')">Copy Code</button>
+                        <div class="code-rewards" data-i18n="reward-sorryforshutdown2">2 lucky style spins and 2 lucky flow spins</div>
+                        <button class="copy-btn" onclick="copyCode('SORRYFORSHUTDOWN2')" data-i18n="copy-code">Copy Code</button>
                     </div>
 
                     <div class="code-card">
                         <div class="code-header">
                             <span class="code-name">SUPERPACKAGE</span>
                         </div>
-                        <div class="code-rewards">1k yen, 6 lucky style spins, and 6 zone spins</div>
-                        <button class="copy-btn" onclick="copyCode('SUPERPACKAGE')">Copy Code</button>
+                        <div class="code-rewards" data-i18n="reward-superpackage">1k yen, 6 lucky style spins, and 6 zone spins</div>
+                        <button class="copy-btn" onclick="copyCode('SUPERPACKAGE')" data-i18n="copy-code">Copy Code</button>
                     </div>
 
                     <div class="code-card">
                         <div class="code-header">
                             <span class="code-name">50KREACTIONS</span>
                         </div>
-                        <div class="code-rewards">5k yen, 6 lucky style spins, and 6 lucky flow spins</div>
-                        <button class="copy-btn" onclick="copyCode('50KREACTIONS')">Copy Code</button>
+                        <div class="code-rewards" data-i18n="reward-50kreactions">5k yen, 6 lucky style spins, and 6 lucky flow spins</div>
+                        <button class="copy-btn" onclick="copyCode('50KREACTIONS')" data-i18n="copy-code">Copy Code</button>
                     </div>
 
                     <div class="code-card">
                         <div class="code-header">
                             <span class="code-name">FIRSTUPD</span>
                         </div>
-                        <div class="code-rewards">500 yen, 2 lucky style spins, and 2 lucky flow spins</div>
-                        <button class="copy-btn" onclick="copyCode('FIRSTUPD')">Copy Code</button>
+                        <div class="code-rewards" data-i18n="reward-firstupd">500 yen, 2 lucky style spins, and 2 lucky flow spins</div>
+                        <button class="copy-btn" onclick="copyCode('FIRSTUPD')" data-i18n="copy-code">Copy Code</button>
                     </div>
 
                     <div class="code-card">
                         <div class="code-header">
                             <span class="code-name">350KLIKES</span>
                         </div>
-                        <div class="code-rewards">1k yen, 6 lucky style spins, and 6 zone spins</div>
-                        <button class="copy-btn" onclick="copyCode('350KLIKES')">Copy Code</button>
+                        <div class="code-rewards" data-i18n="reward-350klikes">1k yen, 6 lucky style spins, and 6 zone spins</div>
+                        <button class="copy-btn" onclick="copyCode('350KLIKES')" data-i18n="copy-code">Copy Code</button>
                     </div>
 
                     <div class="code-card">
                         <div class="code-header">
                             <span class="code-name">850KMEMBERS</span>
                         </div>
-                        <div class="code-rewards">5 lucky style spins, 5 lucky zone spins, and 1 racket pack</div>
-                        <button class="copy-btn" onclick="copyCode('850KMEMBERS')">Copy Code</button>
+                        <div class="code-rewards" data-i18n="reward-850kmembers">5 lucky style spins, 5 lucky zone spins, and 1 racket pack</div>
+                        <button class="copy-btn" onclick="copyCode('850KMEMBERS')" data-i18n="copy-code">Copy Code</button>
                     </div>
                 </div>
 
                 <div class="expired-codes">
-                    <h3>Expired Codes</h3>
+                    <h3 data-i18n="expired-codes">Expired Codes</h3>
                     <div class="expired-list">
                         <span class="expired-code">100KLIKES</span>
                         <span class="expired-code">SORRYFORSHUTDOWN</span>
@@ -151,34 +184,34 @@
         <!-- How to Redeem Section -->
         <section class="how-to-section">
             <div class="container">
-                <h2 class="section-title">How do I redeem Tennis Zero codes?</h2>
-                <p>Tennis Zero codes are easy to claim, but if you need a quick refresher, we're here to help.</p>
+                <h2 class="section-title" data-i18n="how-to-title">How do I redeem Tennis Zero codes?</h2>
+                <p data-i18n="how-to-description">Tennis Zero codes are easy to claim, but if you need a quick refresher, we're here to help.</p>
                 
                 <div class="redeem-visual">
                     <img src="images/screenshots/code-redemption-screen.jpg" alt="Tennis Zero code redemption screen" class="redeem-img" loading="lazy">
-                    <p class="image-caption">The codes redemption screen in Tennis Zero</p>
+                    <p class="image-caption" data-i18n="image-caption">The codes redemption screen in Tennis Zero</p>
                 </div>
                 
                 <div class="steps-grid">
                     <div class="step-card">
                         <div class="step-number">1</div>
-                        <h3>Launch Tennis Zero</h3>
-                        <p>Open Tennis Zero in Roblox on your device</p>
+                        <h3 data-i18n="step1-title">Launch Tennis Zero</h3>
+                        <p data-i18n="step1-description">Open Tennis Zero in Roblox on your device</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">2</div>
-                        <h3>Find Codes Option</h3>
-                        <p>On the lobby screen, tap the 'codes' option</p>
+                        <h3 data-i18n="step2-title">Find Codes Option</h3>
+                        <p data-i18n="step2-description">On the lobby screen, tap the 'codes' option</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">3</div>
-                        <h3>Enter Code</h3>
-                        <p>Enter a code in the 'codes' box</p>
+                        <h3 data-i18n="step3-title">Enter Code</h3>
+                        <p data-i18n="step3-description">Enter a code in the 'codes' box</p>
                     </div>
                     <div class="step-card">
                         <div class="step-number">4</div>
-                        <h3>Redeem Rewards</h3>
-                        <p>Click redeem and enjoy your rewards!</p>
+                        <h3 data-i18n="step4-title">Redeem Rewards</h3>
+                        <p data-i18n="step4-description">Click redeem and enjoy your rewards!</p>
                     </div>
                 </div>
             </div>
@@ -187,13 +220,13 @@
         <!-- More Codes Section -->
         <section class="more-codes-section">
             <div class="container">
-                <h2 class="section-title">How can I get more Tennis Zero codes?</h2>
-                <p>To get more Tennis Zero codes, you can keep coming back to this list, as we update it often to reflect fresh rewards. Bookmark this page and we'll keep you updated.</p>
+                <h2 class="section-title" data-i18n="more-codes-title">How can I get more Tennis Zero codes?</h2>
+                <p data-i18n="more-codes-description">To get more Tennis Zero codes, you can keep coming back to this list, as we update it often to reflect fresh rewards. Bookmark this page and we'll keep you updated.</p>
                 
                 <div class="social-links">
-                    <a href="#" class="social-link discord">Join Discord Server</a>
-                    <a href="#" class="social-link twitter">Follow on Twitter</a>
-                    <a href="#" class="social-link bookmark">Bookmark This Page</a>
+                    <a href="#" class="social-link discord" data-i18n="join-discord">Join Discord Server</a>
+                    <a href="#" class="social-link twitter" data-i18n="follow-twitter">Follow on Twitter</a>
+                    <a href="#" class="social-link bookmark" data-i18n="bookmark-page">Bookmark This Page</a>
                 </div>
             </div>
         </section>
@@ -201,25 +234,25 @@
         <!-- What are Codes Section -->
         <section class="what-codes-section">
             <div class="container">
-                <h2 class="section-title">What are Tennis Zero codes?</h2>
-                <p>Tennis Zero codes are rewards that the developer, Current X Blackstar, hands out, which normally give players lucky style spins or flow spins. Other types of rewards will likely arrive in future updates, making each match more exciting than the last.</p>
+                <h2 class="section-title" data-i18n="what-codes-title">What are Tennis Zero codes?</h2>
+                <p data-i18n="what-codes-description">Tennis Zero codes are rewards that the developer, Current X Blackstar, hands out, which normally give players lucky style spins or flow spins. Other types of rewards will likely arrive in future updates, making each match more exciting than the last.</p>
                 
                 <div class="reward-types">
                     <div class="reward-card">
-                        <h4>Lucky Style Spins</h4>
-                        <p>Get new character styles to customize your appearance</p>
+                        <h4 data-i18n="reward-style-title">Lucky Style Spins</h4>
+                        <p data-i18n="reward-style-description">Get new character styles to customize your appearance</p>
                     </div>
                     <div class="reward-card">
-                        <h4>Lucky Flow Spins</h4>
-                        <p>Unlock special flow abilities for enhanced gameplay</p>
+                        <h4 data-i18n="reward-flow-title">Lucky Flow Spins</h4>
+                        <p data-i18n="reward-flow-description">Unlock special flow abilities for enhanced gameplay</p>
                     </div>
                     <div class="reward-card">
-                        <h4>Yen Currency</h4>
-                        <p>In-game currency to purchase items and upgrades</p>
+                        <h4 data-i18n="reward-yen-title">Yen Currency</h4>
+                        <p data-i18n="reward-yen-description">In-game currency to purchase items and upgrades</p>
                     </div>
                     <div class="reward-card">
-                        <h4>Racket Packs</h4>
-                        <p>Special equipment to improve your tennis performance</p>
+                        <h4 data-i18n="reward-racket-title">Racket Packs</h4>
+                        <p data-i18n="reward-racket-description">Special equipment to improve your tennis performance</p>
                     </div>
                 </div>
             </div>
@@ -228,25 +261,25 @@
         <!-- Troubleshooting Section -->
         <section class="troubleshooting-section">
             <div class="container">
-                <h2 class="section-title">Why are my Tennis Zero codes not working?</h2>
-                <p>If your Tennis Zero codes aren't working, don't worry. Here are the most common issues and solutions:</p>
+                <h2 class="section-title" data-i18n="troubleshooting-title">Why are my Tennis Zero codes not working?</h2>
+                <p data-i18n="troubleshooting-description">If your Tennis Zero codes aren't working, don't worry. Here are the most common issues and solutions:</p>
                 
                 <div class="troubleshooting-list">
                     <div class="trouble-card">
-                        <h4>Check for Typos</h4>
-                        <p>Double-check the code for any spelling mistakes. Codes are case-sensitive!</p>
+                        <h4 data-i18n="trouble1-title">Check for Typos</h4>
+                        <p data-i18n="trouble1-description">Double-check the code for any spelling mistakes. Codes are case-sensitive!</p>
                     </div>
                     <div class="trouble-card">
-                        <h4>Code Already Used</h4>
-                        <p>Each code can only be redeemed once per account. Try a different code.</p>
+                        <h4 data-i18n="trouble2-title">Code Already Used</h4>
+                        <p data-i18n="trouble2-description">Each code can only be redeemed once per account. Try a different code.</p>
                     </div>
                     <div class="trouble-card">
-                        <h4>Expired Code</h4>
-                        <p>Some codes have expiration dates. Check our expired codes list above.</p>
+                        <h4 data-i18n="trouble3-title">Expired Code</h4>
+                        <p data-i18n="trouble3-description">Some codes have expiration dates. Check our expired codes list above.</p>
                     </div>
                     <div class="trouble-card">
-                        <h4>Copy and Paste</h4>
-                        <p>To avoid mistakes, copy and paste codes directly from this page.</p>
+                        <h4 data-i18n="trouble4-title">Copy and Paste</h4>
+                        <p data-i18n="trouble4-description">To avoid mistakes, copy and paste codes directly from this page.</p>
                     </div>
                 </div>
             </div>
@@ -258,32 +291,32 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Tennis Zero Code</h4>
-                    <p>Your ultimate source for Tennis Zero codes, styles, and strategies.</p>
+                    <h4 data-i18n="site-title">Tennis Zero Code</h4>
+                    <p data-i18n="footer-description">Your ultimate source for Tennis Zero codes, styles, and strategies.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer-quicklinks">Quick Links</h4>
                     <ul>
-                        <li><a href="/">Tennis Zero Codes</a></li>
-                        <li><a href="/styles.html">Tennis Zero Styles</a></li>
+                        <li><a href="/" data-i18n="nav-codes">Tennis Zero Codes</a></li>
+                        <li><a href="/styles.html" data-i18n="nav-styles">Tennis Zero Styles</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Game Info</h4>
+                    <h4 data-i18n="footer-gameinfo">Game Info</h4>
                     <ul>
-                        <li><a href="#">What is Tennis Zero?</a></li>
-                        <li><a href="#">Discord Server</a></li>
+                        <li><a href="#" data-i18n="footer-what-is">What is Tennis Zero?</a></li>
+                        <li><a href="#" data-i18n="footer-discord">Discord Server</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Tennis Zero Code. All rights reserved.</p>
+                <p data-i18n="footer-copyright">&copy; 2025 Tennis Zero Code. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Toast Notification -->
-    <div id="toast" class="toast">Code copied to clipboard!</div>
+    <div id="toast" class="toast" data-i18n="toast-copied">Code copied to clipboard!</div>
 
     <script>
         // Mobile menu toggle
@@ -345,7 +378,7 @@
                     placeholder.className = 'image-placeholder';
                     placeholder.innerHTML = `
                         <div class="placeholder-icon">📷</div>
-                        <div class="placeholder-text">图片加载中...</div>
+                        <div class="placeholder-text" data-i18n="placeholder-loading">图片加载中...</div>
                     `;
                     this.parentNode.appendChild(placeholder);
                 }
