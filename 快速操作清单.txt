@@ -1,0 +1,23 @@
+🚀 GitHub Desktop 快速操作清单
+
+📍 您的项目文件在: /Users/young/Desktop/tennis-zero-clean
+
+🔥 快速步骤:
+1. 下载 GitHub Desktop: https://desktop.github.com/
+2. 登录您的GitHub账户 (freyazhang629)
+3. Clone仓库: https://github.com/freyazhang629/tennis-zero
+4. 复制当前文件夹的所有文件到克隆的仓库文件夹
+5. 在GitHub Desktop中提交并推送
+
+⚠️  重要文件确认:
+✅ index.html - 主页
+✅ styles.html - 风格页面  
+✅ styles.css - 样式文件
+✅ images/ - 所有图片文件夹
+✅ sitemap.xml, robots.txt - SEO文件
+
+🌐 上传成功后:
+- 仓库地址: https://github.com/freyazhang629/tennis-zero
+- 网站地址: https://freyazhang629.github.io/tennis-zero
+
+📋 详细指南请查看: GITHUB_DESKTOP_GUIDE.md 

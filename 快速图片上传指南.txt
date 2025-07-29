@@ -1,0 +1,29 @@
+🔥 超简单图片上传方法
+
+📦 已为您准备: images-only.zip (806KB)
+包含您的所有7张图片！
+
+🚀 三步上传:
+
+方法A - GitHub网页 (最简单):
+1. 访问: https://github.com/freyazhang629/tennis-zero
+2. 点击 "Add file" → "Upload files" 
+3. 拖拽 images-only.zip → Commit changes
+
+方法B - GitHub Desktop:
+1. Clone仓库到本地
+2. 解压 images-only.zip 到仓库文件夹
+3. Commit + Push
+
+⚠️ 重要提示:
+- 上传后需要解压zip文件 
+- 确保保持文件夹结构: images/screenshots/ 和 images/styles/
+
+✅ 成功标志:
+- 仓库中能看到 images 文件夹
+- 文件夹包含 screenshots 和 styles 子文件夹
+- 网站图片正常显示
+
+🌐 测试地址: https://freyazhang629.github.io/tennis-zero
+
+🆘 有问题随时问我！ 
