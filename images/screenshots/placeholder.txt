@@ -1,0 +1,10 @@
+把以下截图文件放到这个文件夹中:
+
+1. tennis-zero-lobby.jpg - 游戏大厅截图
+2. code-redemption-screen.jpg - 兑换码界面截图
+
+建议尺寸: 
+- lobby: 500x300px
+- redemption: 600x400px
+
+临时可以从 https://www.roblox.com/games/81072337989394/RELEASE-Tennis-Zero 截图 
