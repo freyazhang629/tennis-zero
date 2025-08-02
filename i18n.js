@@ -7,7 +7,7 @@ const translations = {
         'nav-styles': 'Learn New Tennis Zero Styles',
         
         // Hero Section
-        'hero-title': 'Tennis Zero Codes July 2025',
+        'hero-title': 'Tennis Zero Codes (August 2025)',
         'hero-description': 'Get the latest working Tennis Zero codes for free rewards, lucky spins, and exclusive items. Updated daily!',
         
         // Latest Codes Section
@@ -18,13 +18,12 @@ const translations = {
         'expired-codes': 'Expired Codes',
         
         // Code rewards
-        'reward-jackpotbuff': '6 lucky style spins and 6 lucky flow spins',
-        'reward-sorryforshutdown2': '2 lucky style spins and 2 lucky flow spins',
-        'reward-superpackage': '1k yen, 6 lucky style spins, and 6 zone spins',
-        'reward-50kreactions': '5k yen, 6 lucky style spins, and 6 lucky flow spins',
-        'reward-firstupd': '500 yen, 2 lucky style spins, and 2 lucky flow spins',
-        'reward-350klikes': '1k yen, 6 lucky style spins, and 6 zone spins',
-        'reward-850kmembers': '5 lucky style spins, 5 lucky zone spins, and 1 racket pack',
+        'reward-rankhype': '500 Yen, 5 Lucky Style Spins, and 5 Lucky Flow Spins',
+        'reward-600klikes': '1000 Yen, and 6 Lucky Spins',
+        'reward-jackpotbuff': '6 Lucky Style Spins and 6 Lucky Flow Spins',
+        'reward-sorryforshutdown2': '2 Lucky Style Spins and 2 Lucky Flow Spins',
+        'reward-superpackage': '1000 Yen, 6 Lucky Style Spins, and 6 Lucky Flow Spins',
+        'reward-firstupd': '500 Yen, 2 Lucky Style Spins, and 2 Lucky Flow Spins',
         
         // How to Redeem Section
         'how-to-title': 'How do I redeem Tennis Zero codes?',
@@ -123,7 +122,7 @@ const translations = {
         'nav-codes': 'Tennis Zero Codes',
         'nav-styles': 'Matuto ng Bagong Tennis Zero Styles',
         
-        'hero-title': 'Tennis Zero Codes Hulyo 2025',
+        'hero-title': 'Tennis Zero Codes (Agosto 2025)',
         'hero-description': 'Kunin ang pinakabagong gumaganang Tennis Zero codes para sa libreng rewards, lucky spins, at eksklusibong items. Na-update araw-araw!',
         
         'latest-codes-title': 'Pinakabagong Tennis Zero Codes',
@@ -132,13 +131,12 @@ const translations = {
         'copy-code': 'Kopyahin ang Code',
         'expired-codes': 'Mga Expired na Codes',
         
-        'reward-jackpotbuff': '6 lucky style spins at 6 lucky flow spins',
-        'reward-sorryforshutdown2': '2 lucky style spins at 2 lucky flow spins',
-        'reward-superpackage': '1k yen, 6 lucky style spins, at 6 zone spins',
-        'reward-50kreactions': '5k yen, 6 lucky style spins, at 6 lucky flow spins',
-        'reward-firstupd': '500 yen, 2 lucky style spins, at 2 lucky flow spins',
-        'reward-350klikes': '1k yen, 6 lucky style spins, at 6 zone spins',
-        'reward-850kmembers': '5 lucky style spins, 5 lucky zone spins, at 1 racket pack',
+        'reward-rankhype': '500 Yen, 5 Lucky Style Spins, at 5 Lucky Flow Spins',
+        'reward-600klikes': '1000 Yen, at 6 Lucky Spins',
+        'reward-jackpotbuff': '6 Lucky Style Spins at 6 Lucky Flow Spins',
+        'reward-sorryforshutdown2': '2 Lucky Style Spins at 2 Lucky Flow Spins',
+        'reward-superpackage': '1000 Yen, 6 Lucky Style Spins, at 6 Lucky Flow Spins',
+        'reward-firstupd': '500 Yen, 2 Lucky Style Spins, at 2 Lucky Flow Spins',
         
         'how-to-title': 'Paano ko mire-redeem ang Tennis Zero codes?',
         'how-to-description': 'Ang Tennis Zero codes ay madaling i-claim, pero kung kailangan ninyo ng mabilis na refresher, nandito kami para tumulong.',
@@ -230,7 +228,7 @@ const translations = {
         'nav-codes': 'Коды Tennis Zero',
         'nav-styles': 'Изучить новые стили Tennis Zero',
         
-        'hero-title': 'Коды Tennis Zero июль 2025',
+        'hero-title': 'Коды Tennis Zero (август 2025)',
         'hero-description': 'Получите последние рабочие коды Tennis Zero для бесплатных наград, счастливых вращений и эксклюзивных предметов. Обновляется ежедневно!',
         
         'latest-codes-title': 'Последние коды Tennis Zero',
@@ -239,13 +237,12 @@ const translations = {
         'copy-code': 'Копировать код',
         'expired-codes': 'Просроченные коды',
         
+        'reward-rankhype': '500 йен, 5 счастливых вращений стиля и 5 счастливых вращений потока',
+        'reward-600klikes': '1000 йен и 6 счастливых вращений',
         'reward-jackpotbuff': '6 счастливых вращений стиля и 6 счастливых вращений потока',
         'reward-sorryforshutdown2': '2 счастливых вращения стиля и 2 счастливых вращения потока',
-        'reward-superpackage': '1к йен, 6 счастливых вращений стиля и 6 зональных вращений',
-        'reward-50kreactions': '5к йен, 6 счастливых вращений стиля и 6 счастливых вращений потока',
+        'reward-superpackage': '1000 йен, 6 счастливых вращений стиля и 6 счастливых вращений потока',
         'reward-firstupd': '500 йен, 2 счастливых вращения стиля и 2 счастливых вращения потока',
-        'reward-350klikes': '1к йен, 6 счастливых вращений стиля и 6 зональных вращений',
-        'reward-850kmembers': '5 счастливых вращений стиля, 5 счастливых зональных вращений и 1 пакет ракеток',
         
         'how-to-title': 'Как мне активировать коды Tennis Zero?',
         'how-to-description': 'Коды Tennis Zero легко получить, но если вам нужно быстрое напоминание, мы здесь, чтобы помочь.',
@@ -309,7 +306,7 @@ const translations = {
         'nav-codes': 'Tennis Zero 代码',
         'nav-styles': '学习新的 Tennis Zero 风格',
         
-        'hero-title': 'Tennis Zero 代码 2025年7月',
+        'hero-title': 'Tennis Zero 代码 (2025年8月)',
         'hero-description': '获取最新可用的 Tennis Zero 代码，免费奖励、幸运旋转和独家物品。每日更新！',
         
         'latest-codes-title': '最新 Tennis Zero 代码',
@@ -318,13 +315,12 @@ const translations = {
         'copy-code': '复制代码',
         'expired-codes': '过期代码',
         
+        'reward-rankhype': '500日元，5次幸运风格旋转和5次幸运流动旋转',
+        'reward-600klikes': '1000日元和6次幸运旋转',
         'reward-jackpotbuff': '6次幸运风格旋转和6次幸运流动旋转',
         'reward-sorryforshutdown2': '2次幸运风格旋转和2次幸运流动旋转',
-        'reward-superpackage': '1k日元，6次幸运风格旋转和6次区域旋转',
-        'reward-50kreactions': '5k日元，6次幸运风格旋转和6次幸运流动旋转',
+        'reward-superpackage': '1000日元，6次幸运风格旋转和6次幸运流动旋转',
         'reward-firstupd': '500日元，2次幸运风格旋转和2次幸运流动旋转',
-        'reward-350klikes': '1k日元，6次幸运风格旋转和6次区域旋转',
-        'reward-850kmembers': '5次幸运风格旋转，5次幸运区域旋转和1个球拍包',
         
         'how-to-title': '如何兑换 Tennis Zero 代码？',
         'how-to-description': 'Tennis Zero 代码很容易领取，但如果您需要快速提醒，我们在这里帮助您。',
@@ -388,7 +384,7 @@ const translations = {
         'nav-codes': 'Códigos Tennis Zero',
         'nav-styles': 'Aprender Novos Estilos Tennis Zero',
         
-        'hero-title': 'Códigos Tennis Zero Julho 2025',
+        'hero-title': 'Códigos Tennis Zero (Agosto 2025)',
         'hero-description': 'Obtenha os códigos Tennis Zero mais recentes e funcionais para recompensas gratuitas, giros da sorte e itens exclusivos. Atualizado diariamente!',
         
         'latest-codes-title': 'Códigos Tennis Zero Mais Recentes',
@@ -397,13 +393,12 @@ const translations = {
         'copy-code': 'Copiar Código',
         'expired-codes': 'Códigos Expirados',
         
+        'reward-rankhype': '500 yen, 5 giros de estilo da sorte e 5 giros de fluxo da sorte',
+        'reward-600klikes': '1000 yen e 6 giros da sorte',
         'reward-jackpotbuff': '6 giros de estilo da sorte e 6 giros de fluxo da sorte',
         'reward-sorryforshutdown2': '2 giros de estilo da sorte e 2 giros de fluxo da sorte',
-        'reward-superpackage': '1k yen, 6 giros de estilo da sorte e 6 giros de zona',
-        'reward-50kreactions': '5k yen, 6 giros de estilo da sorte e 6 giros de fluxo da sorte',
+        'reward-superpackage': '1000 yen, 6 giros de estilo da sorte e 6 giros de fluxo da sorte',
         'reward-firstupd': '500 yen, 2 giros de estilo da sorte e 2 giros de fluxo da sorte',
-        'reward-350klikes': '1k yen, 6 giros de estilo da sorte e 6 giros de zona',
-        'reward-850kmembers': '5 giros de estilo da sorte, 5 giros de zona da sorte e 1 pacote de raquete',
         
         'how-to-title': 'Como resgato códigos Tennis Zero?',
         'how-to-description': 'Os códigos Tennis Zero são fáceis de reivindicar, mas se você precisa de uma recapitulação rápida, estamos aqui para ajudar.',
