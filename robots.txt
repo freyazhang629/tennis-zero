@@ -20,4 +20,4 @@ Allow: /*.css
 Allow: /*.js
 
 # Allow images
-Allow: /images/ 
+Allow: /images/
