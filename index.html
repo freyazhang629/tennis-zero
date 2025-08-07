@@ -76,9 +76,7 @@
                         <p class="hero-description">获取最新可用的Tennis Zero代码，免费奖励、幸运旋转和独家物品。每日更新！</p>
                     </div>
                     <div class="hero-image">
-                        <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 600; text-align: center;">
-                            🎾<br/>Tennis Zero<br/>游戏代码
-                        </div>
+                        <img src="images/screenshots/tennis-zero-lobby.jpg" alt="Tennis Zero game lobby screenshot" class="hero-img" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -202,6 +200,11 @@
             <div class="container">
                 <h2 class="section-title">如何兑换 Tennis Zero 代码？</h2>
                 <p>Tennis Zero 代码很容易领取，但如果您需要快速提醒，我们在这里帮助您。</p>
+                
+                <div class="redeem-visual">
+                    <img src="images/screenshots/code-redemption-screen.jpg" alt="Tennis Zero code redemption screen" class="redeem-img" loading="lazy">
+                    <p class="image-caption">Tennis Zero 中的代码兑换界面</p>
+                </div>
                 
                 <div class="steps-grid">
                     <div class="step-card">
@@ -411,6 +414,42 @@
                     }
                 });
             });
+        });
+
+        // Handle image loading
+        document.querySelectorAll('img').forEach(img => {
+            // Handle successful loading
+            img.addEventListener('load', function() {
+                if (this.classList.contains('hero-img')) {
+                    this.parentNode.classList.add('image-loaded');
+                }
+            });
+            
+            // Handle loading errors
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+                
+                // For hero image, the CSS ::after pseudo-element will show placeholder
+                if (this.classList.contains('hero-img')) {
+                    this.parentNode.classList.remove('image-loaded');
+                }
+                
+                // Create placeholder for other images
+                else {
+                    const placeholder = document.createElement('div');
+                    placeholder.className = 'image-placeholder';
+                    placeholder.innerHTML = `
+                        <div class="placeholder-icon">📷</div>
+                        <div class="placeholder-text">图片加载中...</div>
+                    `;
+                    this.parentNode.appendChild(placeholder);
+                }
+            });
+            
+            // Check if image is already loaded (cached)
+            if (img.complete && img.naturalHeight !== 0) {
+                img.dispatchEvent(new Event('load'));
+            }
         });
     </script>
 </body>
