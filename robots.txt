@@ -1,23 +1,23 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemap location
 Sitemap: https://tenniszero.top/sitemap.xml
 
-# Block common bot paths
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.json$
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
 
-# Allow all search engines
-User-agent: Googlebot
-Allow: /
+# Allow important pages
+Allow: /index.html
+Allow: /styles.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
 
-User-agent: Bingbot
-Allow: /
+# Allow CSS and JS files
+Allow: /*.css
+Allow: /*.js
 
-User-agent: YandexBot
-Allow: /
-
-# Crawl delay
-Crawl-delay: 1 
+# Allow images
+Allow: /images/ 
